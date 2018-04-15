@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Магазин «Cat Energy»">
+      </a>
+      <button class="page-header__toggle">Открыть меню</button>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item  site-list__item--active">
+              <a>Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="selection">
+      <div class="selection__wrapper">
+        <form class="selection__form form" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="form__title">Подбор программы</h2>
+          <p class="form__introduction">
+            Заполните анкету и мы подберем программу питания для вашего кота
+          </p>
+          <div class="form-client-data">
+            <fieldset class="form-client-data__fieldset">
+              <label for="client-name">Имя:<sup>*</sup></label>
+              <input class="form-client-data__field" id="client-name" type="text" name="name" placeholder="Барсик" required>
+              <label for="client-weight">Вес:<sup>*</sup></label>
+              <input class="form-client-data__field" id="client-weight" type="number" name="weight" placeholder="7" required>
+              <label for="client-age">Возраст (Лет):</label>
+              <input class="form-client-data__field" id="client-age" type="number" name="age" placeholder="7">
+            </fieldset>
+          </div>
+          <div class="form-option">
+            <fieldset class="form-option__fieldset">
+              <input class="form-option__radio form-option__radio--checked" type="radio" name="option" id="slim" checked>
+              <label for="slim">Похудение</label>
+              <input class="form-option__radio" type="radio" name="option" id="pro">
+              <label for="pro">Набор массы</label>
+              <input class="form-option__radio" type="radio" name="option" id="help">
+              <label for="help">Не знаю (Нужен ваш совет)</label>
+            </fieldset>
+          </div>
+          <div class="form-client-contacts">
+            <fieldset class="form-client-contacts__fieldset">
+              <legend class="form-client-contacts__title">
+                Контактные данные (Владельца кота)
+              </legend>
+              <label for="client-email">E-mail:<sup>*</sup></label>
+              <input class="form-client-contacts__field" type="email" name="email" id="client-email" placeholder="kukclachev@gmail.com" required>
+              <label for="client-tel">Телефон:<sup>*</sup></label>
+              <input class="form-client-contacts__field" type="tel" name="tel" id="client-tel" placeholder="8(960)900-60-90" required>
+            </fieldset>
+          </div>
+          <div class="form-comment">
+            <fieldset class="form-comment__fieldset">
+              <legend class="form-comment__title">
+                Комментарий
+              </legend>
+              <textarea class="form-comment__text" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+          </div>
+          <div class="form-extra">
+            <fieldset class="form-extra__fieldset">
+              <legend class="form-extra__title">
+                Дополнительно
+              </legend>
+              <input class="form-extra__checkbox" type="checkbox" name="extra" id="sugar">
+              <label for="sugar">Сахарозаменитель</label>
+              <input class="form-extra__checkbox" type="checkbox" name="extra" id="water">
+              <label for="water">Питьевая вода</label>
+              <input class="form-extra__checkbox" type="checkbox" name="extra" id="milk">
+              <label for="milk">Молоко</label>
+              <input class="form-extra__checkbox" type="checkbox" name="extra" id="vitamins">
+              <label for="vitamins">Витамины</label>
+            </fieldset>
+          </div>
+          <button class="form__button button" type="submit">Заказать</button>
+          <small class="form__legend">
+          <sup>*</sup>-Обязательные поля
+        </small>
+        </form>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts-catalog__wrapper">
+        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <span class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        <a class="contacts__map">
+          <img src="http://placehold.it/150x100" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+        </a>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="index.html" class="page-footer__logo">
+          <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Магазин «Cat Energy»">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--vkontakte" aria-label="Vkontakte"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--instagram" aria-label="Instagram"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook" aria-label="Facebook"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__academy">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link" aria-label="HTML Academy">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
