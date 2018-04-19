@@ -1,0 +1,28 @@
+@font-face {
+  font-weight: normal;
+  font-family: "oswaldregular";
+  src: url("/fonts/oswaldregular.woff2") format("woff2");
+  src: url("/fonts/oswaldregular.woff") format("woff");
+}
+@font-face {
+  font-weight: bold;
+  font-family: "oswaldmedium";
+  src: url("/fonts/oswaldmedium.woff") format("woff");
+  src: url("/fonts/oswaldmedium.woff2") format("woff2");
+}
+
+body {
+  box-sizing: border-box;
+  font-family: @font-regular;
+  .font-size(14px; 18px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
