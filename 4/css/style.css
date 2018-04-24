@@ -502,9 +502,9 @@ a {
           flex-direction: column;
   width: 320px;
   margin: auto;
-  background: url("/img/index-background-mobile@1x.jpg") no-repeat, linear-gradient(#68b738 305px, transparent 305px);
   background-size: auto;
   color: #ffffff;
+  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
 }
 .promo__title {
   padding: 29px 40px;
@@ -593,6 +593,7 @@ a {
     padding-left: 81px;
   }
   .promo__button {
+    margin-left: 81px;
     width: 225px;
   }
   .promo__image {
@@ -849,11 +850,13 @@ a {
     padding-right: 40px;
   }
 }
+.example {
+  background-color: #f2f2f2;
+}
 .example__wrapper {
   width: 280px;
   padding: 0 20px;
   margin: auto;
-  background-color: #f2f2f2;
 }
 .example__title {
   padding-bottom: 0;
@@ -927,7 +930,6 @@ a {
     position: relative;
   }
   .example__wrapper {
-    background-color: #ffffff;
     position: relative;
   }
   .example__title {
