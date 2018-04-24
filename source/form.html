@@ -35,40 +35,56 @@
   <main class="page-main">
     <section class="selection">
       <div class="selection__wrapper">
+        <h2 class="selection__title">Подбор программы</h2>
         <form class="selection__form form" action="https://echo.htmlacademy.ru/" method="get">
-          <h2 class="form__title">Подбор программы</h2>
           <p class="form__introduction">
             Заполните анкету и мы подберем программу питания для вашего кота
           </p>
-          <div class="form-client-data">
-            <fieldset class="form-client-data__fieldset">
-              <label for="client-name">Имя:<sup>*</sup></label>
-              <input class="form-client-data__field" id="client-name" type="text" name="name" placeholder="Барсик" required>
-              <label for="client-weight">Вес:<sup>*</sup></label>
-              <input class="form-client-data__field" id="client-weight" type="number" name="weight" placeholder="7" required>
-              <label for="client-age">Возраст (Лет):</label>
-              <input class="form-client-data__field" id="client-age" type="number" name="age" placeholder="7">
-            </fieldset>
-          </div>
-          <div class="form-option">
-            <fieldset class="form-option__fieldset">
-              <input class="form-option__radio form-option__radio--checked" type="radio" name="option" id="slim" checked>
-              <label for="slim">Похудение</label>
-              <input class="form-option__radio" type="radio" name="option" id="pro">
-              <label for="pro">Набор массы</label>
-              <input class="form-option__radio" type="radio" name="option" id="help">
-              <label for="help">Не знаю (Нужен ваш совет)</label>
-            </fieldset>
+          <div class="form-client-data__wrapper">
+            <div class="form-client-data">
+              <fieldset class="form-client-data__fieldset">
+                <div class="form-client-data__container">
+                  <label for="client-name">Имя:<sup>*</sup></label>
+                  <input class="form-client-data__field" id="client-name" type="text" name="name" placeholder="Барсик" required>
+                </div>
+                <div class="form-client-data__container">
+                  <label for="client-weight">Вес (Кг):<sup>*</sup></label>
+                  <input class="form-client-data__field" id="client-weight" type="number" name="weight" placeholder="7" required>
+                </div>
+                <div class="form-client-data__container">
+                  <label for="client-age">Возраст (Лет):</label>
+                  <input class="form-client-data__field" id="client-age" type="number" name="age" placeholder="7">
+                </div>
+              </fieldset>
+            </div>
+            <div class="form-option">
+              <fieldset class="form-option__fieldset">
+                <div class="form-option__container">
+                  <input class="form-option__radio form-option__radio--checked" type="radio" name="option" id="slim" checked>
+                  <label for="slim">Похудение</label>
+                  <input class="form-option__radio" type="radio" name="option" id="pro">
+                  <label for="pro">Набор массы</label>
+                  <input class="form-option__radio" type="radio" name="option" id="help">
+                  <label for="help">Не знаю (Нужен ваш совет)</label>
+                </div>
+              </fieldset>
+            </div>
           </div>
           <div class="form-client-contacts">
             <fieldset class="form-client-contacts__fieldset">
               <legend class="form-client-contacts__title">
                 Контактные данные (Владельца кота)
               </legend>
-              <label for="client-email">E-mail:<sup>*</sup></label>
-              <input class="form-client-contacts__field" type="email" name="email" id="client-email" placeholder="kukclachev@gmail.com" required>
-              <label for="client-tel">Телефон:<sup>*</sup></label>
-              <input class="form-client-contacts__field" type="tel" name="tel" id="client-tel" placeholder="8(960)900-60-90" required>
+              <div class="form-client-contacts__wrapper">
+                <div class="form-client-contacts__container">
+                  <label for="client-email">E-mail:<sup>*</sup></label>
+                  <input class="form-client-contacts__field" type="email" name="email" id="client-email" placeholder="kukclachev@gmail.com" required>
+                </div>
+                <div class="form-client-contacts__container">
+                  <label for="client-tel">Телефон:<sup>*</sup></label>
+                  <input class="form-client-contacts__field" type="tel" name="tel" id="client-tel" placeholder="8(960)900-60-90" required>
+                </div>
+              </div>
             </fieldset>
           </div>
           <div class="form-comment">
@@ -84,17 +100,19 @@
               <legend class="form-extra__title">
                 Дополнительно
               </legend>
-              <input class="form-extra__checkbox" type="checkbox" name="extra" id="sugar">
-              <label for="sugar">Сахарозаменитель</label>
-              <input class="form-extra__checkbox" type="checkbox" name="extra" id="water">
-              <label for="water">Питьевая вода</label>
-              <input class="form-extra__checkbox" type="checkbox" name="extra" id="milk">
-              <label for="milk">Молоко</label>
-              <input class="form-extra__checkbox" type="checkbox" name="extra" id="vitamins">
-              <label for="vitamins">Витамины</label>
+              <div class="form-extra__container">
+                <input class="form-extra__checkbox" type="checkbox" name="extra" id="sugar">
+                <label for="sugar">Сахарозаменитель</label>
+                <input class="form-extra__checkbox" type="checkbox" name="extra" id="water">
+                <label for="water">Питьевая вода</label>
+                <input class="form-extra__checkbox" type="checkbox" name="extra" id="milk">
+                <label for="milk">Молоко</label>
+                <input class="form-extra__checkbox" type="checkbox" name="extra" id="vitamins">
+                <label for="vitamins">Витамины</label>
+              </div>
             </fieldset>
           </div>
-          <button class="form__button button" type="submit">Заказать</button>
+          <button class="form__button button" type="submit">Отправить заявку</button>
           <small class="form__legend">
           <sup>*</sup>—Обязательные поля
         </small>
@@ -102,10 +120,12 @@
       </div>
     </section>
 
-    <section class="contacts">
-      <div class="contacts-catalog__wrapper">
-        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <span class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+    <section class="contacts-catalog">
+      <div class="contacts__wrapper">
+        <div class="contacts__container">
+          <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+          <span class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <br><br> Санкт-Петербург</span>
+        </div>
         <a class="contacts__map">
           <img src="http://placehold.it/150x100" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
         </a>

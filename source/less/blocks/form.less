@@ -1,6 +1,8 @@
-.selection__form {
-  display: flex;
-  flex-direction: column;
+.form__introduction {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 37px;
+  text-transform: uppercase;
 }
 
 .form fieldset {
@@ -10,45 +12,77 @@
   text-transform: uppercase;
 }
 
-.form__title {
-  margin: 0;
-  padding-top: 30px;
-  .font-size(36px; 60px);
-}
-
-.form__introduction {
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 37px;
-  text-transform: uppercase;
-}
-
 .form-client-data {
   padding-bottom: 24px;
 }
 
+.form-client-data__container {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
 .form-client-data__field {
   padding: 10px 5px;
+  width: 100%;
   text-transform: uppercase;
+  border: 1px solid @color-border;
+}
+
+.form-client-data label {
+  padding-right: 15px;
+  flex-shrink: 0;
 }
 
 .form-option {
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.form-option__container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.form-option label {
+  padding-left: 45px;
+  padding-bottom: 20px;
+}
+
+.form-option__radio {
+  display: none;
 }
 
 .form-client-contacts {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .form-client-contacts__title {
-  padding-top: 30px;
   padding-bottom: 30px;
+  .font-size(24px; 24px);
+  text-transform: none;
+}
+
+.form-client-contacts__container {
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 .form-client-contacts__field {
   padding: 10px 5px;
   text-transform: uppercase;
+  width: 100%;
+  border: 1px solid @color-border;
+}
+
+.form-client-contacts label {
+  padding-right: 15px;
+  flex-shrink: 0;
 }
 
 .form-comment {
@@ -57,11 +91,14 @@
 
 .form-comment__title {
   padding-bottom: 30px;
+  .font-size(24px; 24px);
+  text-transform: none;
 }
 
 .form-comment__text {
   width: 100%;
   text-transform: uppercase;
+  border: 1px solid @color-border;
 }
 
 .form-extra {
@@ -70,12 +107,139 @@
 
 .form-extra__title {
   padding-bottom: 30px;
+  .font-size(24px; 24px);
+  text-transform: none;
+}
+
+.form-extra__container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.form-extra label {
+  padding-bottom: 25px;
+  padding-left: 46px;
+}
+
+.form-extra__checkbox {
+  display: none;
 }
 
 .form__legend {
   padding-top: 20px;
   padding-bottom: 30px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   .font-size(14px; 16px);
   text-align: center;
+}
+@media (min-width: @tablet-width) {
+  .form {
+    padding: 50px 40px;
+  }
+
+  .form__introduction {
+    width: 335px;
+    .font-size(20px; 30px);
+  }
+
+  .form fieldset {
+    .font-size(20px; 20px);
+  }
+
+  .form-client-data {
+    padding-bottom: 55px;
+  }
+
+  .form-client-data__container {
+    padding-bottom: 20px;
+  }
+
+  .form-client-data__field {
+    padding-left: 20px;
+  }
+
+  .form-option {
+    padding-top: 35px;
+    border: 1px solid @color-bg2;
+  }
+
+  .form-client-contacts {
+    padding-top: 75px;
+    padding-bottom: 60px;
+  }
+
+  .form-client-contacts__title {
+    padding-bottom: 65px;
+    .font-size(36px; 36px);
+  }
+
+  .form-client-contacts__field {
+    padding-left: 20px;
+  }
+
+  .form-comment {
+    padding-bottom: 60px;
+  }
+
+  .form-comment__title {
+    padding-bottom: 60px;
+    .font-size(36px; 36px);
+  }
+
+  .form-comment__text {
+    padding-left: 20px;
+  }
+
+  .form-extra__title {
+    padding-bottom: 65px;
+    .font-size(36px; 36px);
+  }
+
+  .form-extra__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-extra label {
+    width: 165px;
+  }
+
+  .form__legend {
+    padding-left: 60px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .form {
+    padding: 0 0 85px;
+  }
+
+  .form-client-data__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: @width-large;
+  }
+
+  .form-client-data {
+    width: 570px;
+  }
+
+  .form-option {
+    width: 570px;
+    border: 1px solid @color-border;
+  }
+
+  .form-client-contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-client-contacts__container {
+    width: 570px;
+  }
+
+  .form__button {
+    width: 570px;
+  }
 }

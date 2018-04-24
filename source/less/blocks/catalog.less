@@ -10,3 +10,26 @@
   .font-size(36px; 60px);
   color: @color-text-17;
 }
+@media (min-width: @tablet-width) {
+  .catalog {
+    width: 100%;
+    position: relative;
+    .wrapper();
+  }
+
+  .catalog__title {
+    padding-bottom: 160px;
+    .font-size(60px; 60px);
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: @desktop-width) {
+  .catalog {
+    .wrapper();
+  }
+}

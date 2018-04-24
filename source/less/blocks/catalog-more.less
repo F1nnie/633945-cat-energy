@@ -12,7 +12,7 @@
 .catalog-more__text {
   margin: 0;
   padding-bottom: 22px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   .font-size(12px; 16px);
   color: @color-text-68;
 }
@@ -20,4 +20,37 @@
 .catalog-more__button {
   background-color: @color-bg2;
   color: @color-text-68;
+}
+@media (min-width: @tablet-width) {
+  .catalog-more {
+    width: 246px;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 40px;
+    border: 1px solid @color-border;
+  }
+
+  .catalog-more__title {
+    padding-top: 165px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    width: 140px;
+    .font-size(20px; 20px);
+  }
+
+  .catalog-more__text {
+    padding-bottom: 85px;
+    margin: 0 auto;
+    width: 164px;
+    .font-size(16px; auto);
+  }
+
+  .catalog-more__button {
+    width: 100%;
+  }
+}
+@media (min-width: @desktop-width) {
+  .catalog-more {
+    width: 169px;
+  }
 }

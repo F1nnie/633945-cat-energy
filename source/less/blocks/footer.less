@@ -1,18 +1,40 @@
+.page-footer {
+  background-color: @color-bg2;
+}
+
 .page-footer__wrapper {
-  padding: 0;
-  text-align: center;
-  width: 320px;
+  padding-top: 38px;
+  padding-bottom: 20px;
   margin: auto;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background-color: @color-bg2;
 }
 
 .academy__link {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   .font-size(16px; 20px);
   color: rgba(68, 68, 68, 1);
 }
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 100%;
+    position: relative;
+    .wrapper();
+  }
 
-.page-footer__logo-image {
-  padding-top: 39px;
-  padding-bottom: 30px;
+  .page-footer__wrapper {
+    padding-top: 65px;
+    padding-bottom: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    padding: 50px 40px;
+  }
 }

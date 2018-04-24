@@ -8,3 +8,26 @@
   padding-bottom: 30px;
   .font-size(24px; 24px);
 }
+@media (min-width: @tablet-width) {
+  .catalog-extra__title {
+    padding-bottom: 70px;
+    padding-left: 35px;
+    .font-size(36px; 36px);
+  }
+}
+@media (min-width: @desktop-width) {
+  .catalog-extra {
+    padding: 0;
+  }
+
+  .catalog-extra__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 90px;
+  }
+
+  .catalog-extra__title {
+    padding-left: 0;
+  }
+}

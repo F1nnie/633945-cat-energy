@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -92,36 +93,40 @@
 
     <section class="example">
       <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <table class="example__table">
-          <tr>
-            <th class="example__value">
-              5 кг
-            </th>
-            <th class="example__value">
-              60 дней
-            </th>
-          </tr>
-          <tr>
-            <td class="example__field">
-              снижение<br>веса
-            </td>
-            <td class="example__field">
-              затрачено<br>времени
-            </td>
-          </tr>
-        </table>
+        <div class="example__wrap">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__container">
+            <table class="example__table">
+              <tr>
+                <th class="example__value">
+                  5 кг
+                </th>
+                <th class="example__value">
+                  60 дней
+                </th>
+              </tr>
+              <tr>
+                <td class="example__field">
+                  снижение <br> веса
+                </td>
+                <td class="example__field">
+                  затрачено <br> времени
+                </td>
+              </tr>
+            </table>
+            <span class="example__legend">Затраты на питание: 15 000 руб.</span>
+          </div>
+        </div>
         <div class="example__slider">
-          <span class="slider__title">Затраты на питание: 15 000 руб.</span>
           <img class="slider__slide-before slider__slide-before--active" src="img/before-mobile@1x.png" width="320" height="240" alt="До">
           <div class="slider__navigation">
-          <button class="slider__toggle">Было</button>
-          <div class="slider__scale">
-          </div>
-          <button class="slider__toggle">Стало</button>
+            <button class="slider__toggle">Было</button>
+            <div class="slider__scale">
+            </div>
+            <button class="slider__toggle">Стало</button>
           </div>
         </div>
       </div>
@@ -129,38 +134,40 @@
 
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <span class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        <div class="contacts__container">
+          <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+          <span class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <br><br> Санкт-Петербург</span>
+        </div>
         <a class="contacts__map">
           <img src="http://placehold.it/150x100" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
         </a>
       </div>
     </section>
-    </main>
+  </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo">
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="img/logo-footer.svg" width="127" height="23" alt="Магазин «Cat Energy»">
       </a>
-        <div class="page-footer__social social">
-          <ul class="social__list list">
-            <li class="social__item">
-              <a href="#" class="social__link social__link--vkontakte" aria-label="Vkontakte"></a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--instagram" aria-label="Instagram"></a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link social__link--facebook" aria-label="Facebook"></a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__academy">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link" aria-label="HTML Academy">HTML Academy</a>
-        </div>
+      <div class="page-footer__social social">
+        <ul class="social__list list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vkontakte" aria-label="Vkontakte"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram" aria-label="Instagram"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook" aria-label="Facebook"></a>
+          </li>
+        </ul>
       </div>
-    </footer>
+      <div class="page-footer__academy">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link" aria-label="HTML Academy">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
