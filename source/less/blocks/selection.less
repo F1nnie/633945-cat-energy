@@ -1,4 +1,28 @@
 .selection__wrapper {
   width: 280px;
   margin: auto;
+  padding-top: 25px;
+}
+
+.selection__title {
+  margin: 0;
+  .font-size(36px; 60px);
+}
+@media (min-width: @tablet-width) {
+  .selection {
+    padding-top: 55px;
+    width: 100%;
+    position: relative;
+    .wrapper();
+  }
+
+  .selection__title {
+    padding-bottom: 45px;
+    .font-size(60px; 60px);
+  }
+}
+@media (min-width: @desktop-width) {
+  .selection {
+    .wrapper();
+  }
 }
