@@ -1,5 +1,4 @@
 .promo {
-  padding-top: 21px;
   text-align: center;
 }
 
@@ -10,11 +9,15 @@
   margin: auto;
   background-size: auto;
   color: @color-white;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat, linear-gradient(@color-bg) no-repeat;
+  background-size: 320px 305px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__title {
-  padding: 29px 40px;
+  padding: 27px 40px;
   margin: 0;
   font-family: @font-regular;
   font-weight: normal;
@@ -31,6 +34,7 @@
 .promo__image {
   margin: 0 auto;
 }
+
 @media(min-width: @tablet-width) {
   .promo {
     width: 100%;
@@ -40,43 +44,59 @@
   }
 
   .promo__wrapper {
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-image: none;
   }
 
   .promo__title {
-    padding-left: 90px;
-    padding-bottom: 40px;
+    padding-top: 56px;
+    padding-left: 85px;
+    padding-bottom: 41px;
     width: 420px;
-    order: 1;
     .font-size(60px; 60px);
     color: @color-text-17;
     text-align: left;
+    z-index: 2;
   }
 
   .promo__text {
     padding-left: 90px;
-    padding-bottom: 40px;
-    order: 2;
+    padding-bottom: 50px;
     .font-size(20px; 20px);
     color: @color-text-17;
+    z-index: 2;
   }
 
   .promo__button {
-    order: 3;
-    margin-left: 90px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: absolute;
+    top: 285px;
+    margin-left: 89px;
+    width: 244px;
+    z-index: 2;
   }
 
   .promo__image {
-    order: 4;
+    margin-top: -30px;
+    width: 709px;
+    height: 609px;
+    z-index: 1;
+  }
+  .promo picture {
+    height: 580px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .promo {
+    padding-bottom: 15px;
     .wrapper();
   }
 
+
   .promo__title {
+    padding-top: 105px;
     padding-left: 81px;
   }
 
@@ -85,11 +105,20 @@
   }
 
   .promo__button {
+    top: 339px;
     margin-left: 81px;
-    width: 225px;
+    width: 245px;
   }
 
   .promo__image {
-    margin-top: -200px;
+    position: relative;
+    right: -450px;
+    top: -280px;
+    width: 552px;
+    height: 499px;
+  }
+
+  .promo picture {
+    height: 310px;
   }
 }

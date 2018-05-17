@@ -1,12 +1,27 @@
 .catalog-more {
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 77px;
+  padding-bottom: 25px;
   text-align: center;
+  border-bottom: 1px solid @color-border;
 }
 
 .catalog-more__title {
+  width: 205px;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 7px;
   .font-size(16px; 20px);
   text-transform: uppercase;
+    &::before {
+    content: "";
+    position: absolute;
+    top: -53px;
+    left: 88px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .catalog-more__text {
@@ -21,9 +36,15 @@
   background-color: @color-bg2;
   color: @color-text-68;
 }
+
+.catalog-more__button:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 @media (min-width: @tablet-width) {
   .catalog-more {
     width: 246px;
+    padding-top: 0;
     padding-left: 38px;
     padding-right: 38px;
     padding-bottom: 40px;
@@ -32,25 +53,36 @@
 
   .catalog-more__title {
     padding-top: 165px;
-    padding-bottom: 25px;
+    padding-bottom: 27px;
     margin: 0 auto;
     width: 140px;
     .font-size(20px; 20px);
+    &::before {
+      top: 55px;
+      left: 40px;
+      width: 60px;
+      height: 60px;
+    }
   }
 
   .catalog-more__text {
-    padding-bottom: 85px;
+    padding-bottom: 88px;
     margin: 0 auto;
-    width: 164px;
+    width: 168px;
     .font-size(16px; auto);
   }
 
   .catalog-more__button {
     width: 100%;
+    .font-size(16px; 20px);
   }
 }
+
 @media (min-width: @desktop-width) {
   .catalog-more {
     width: 169px;
+  }
+  .catalog-more__title {
+    padding-top: 162px;
   }
 }

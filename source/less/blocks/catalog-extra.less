@@ -1,33 +1,80 @@
 .catalog-extra {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
   padding-bottom: 40px;
+  position: relative;
 }
 
 .catalog-extra__title {
+  position: relative;
+  width: 226px;
   margin: 0;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
+  padding-right: 23px;
   .font-size(24px; 24px);
+  background-color: @color-white;
 }
+
+.catalog-extra__container {
+  position: relative;
+}
+
+.catalog-extra__container::before {
+  content: "";
+  position: absolute;
+  width: 50vw;
+  height: 3px;
+  top: 42px;
+  right: 0;
+  background-color: @color-bg;
+}
+
 @media (min-width: @tablet-width) {
+  .catalog-extra {
+    margin-top: -102px;
+    width: @width-medium;
+    padding-bottom: 65px;
+  }
+
+  .catalog-extra__container::before {
+    width: 100vw;
+    top: 52px;
+  }
+
   .catalog-extra__title {
-    padding-bottom: 70px;
-    padding-left: 35px;
+    padding-bottom: 80px;
+    padding-left: 37px;
+    padding-right: 0;
+    width: 375px;
     .font-size(36px; 36px);
+    background-color: #ffffff;
   }
 }
+
 @media (min-width: @desktop-width) {
   .catalog-extra {
-    padding: 0;
+    margin-top: -97px;
+    width: auto;
   }
 
   .catalog-extra__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    margin: 0 auto;
     padding-bottom: 90px;
   }
 
   .catalog-extra__title {
-    padding-left: 0;
+    margin-left: 90px;
+    padding-left: 40px;
+    width: 373px;
+    padding-bottom: 80px;
+    background-color: none;
+    border: none;
+  }
+
+  .catalog-extra__list {
+    width: @width-large;
+    margin: 0 auto;
   }
 }
