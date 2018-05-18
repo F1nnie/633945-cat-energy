@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
-
 }
+
 .main-nav__wrapper {
   width: 320px;
 }
@@ -13,6 +13,7 @@
   border: none;
   background-color: rgb(255, 255, 255);
 }
+
 .main-nav--opened .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -25,6 +26,7 @@
   background-position: 0 0;
   background-size: 100%;
 }
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -52,17 +54,16 @@
   .main-nav {
     width: 440px;
     position: relative;
+
     &__toggle {
       display: none;
     }
   }
-
 }
+
 @media (min-width: @desktop-width) {
   .main-nav {
     width: 480px;
     position: relative;
-
   }
-
 }

@@ -1,4 +1,5 @@
-.font-size(@font-size; @line-height) {
+.font-size(@font-size;
+@line-height) {
   font-size: @font-size;
   line-height: @line-height;
 }
@@ -8,9 +9,8 @@
     @media (min-width: @tablet-width) {
       width: @width-medium;
       margin: 0 auto;
-      // padding-left: 30px;
-      // padding-right: 30px;
     }
+
     @media (min-width: @desktop-width) {
       width: @width-large;
       padding-left: 40px;

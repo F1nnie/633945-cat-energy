@@ -5,6 +5,7 @@
   src: url("../fonts/oswaldregular.woff2") format("woff2");
   src: url("../fonts/oswaldregular.woff") format("woff");
 }
+
 @font-face {
   font-weight: bold;
   font-family: "oswaldmedium";
@@ -16,7 +17,8 @@
 body {
   box-sizing: border-box;
   font-family: @font-regular;
-  .font-size(14px; 18px);
+  .font-size(14px;
+  18px);
 }
 
 a {
@@ -30,15 +32,12 @@ img {
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
