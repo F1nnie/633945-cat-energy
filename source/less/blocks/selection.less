@@ -1,28 +1,40 @@
 .selection__wrapper {
-  width: 280px;
   margin: auto;
-  padding-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid @color-border;
 }
 
 .selection__title {
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 2px;
   .font-size(36px; 60px);
 }
+
 @media (min-width: @tablet-width) {
   .selection {
-    padding-top: 55px;
-    width: 100%;
+    padding-top: 40px;
     position: relative;
-    .wrapper();
+  }
+
+  .selection__wrapper {
+    border: none;
   }
 
   .selection__title {
-    padding-bottom: 45px;
+    width: @width-medium;
+    padding-top: 0;
+    padding-bottom: 31px;
     .font-size(60px; 60px);
   }
 }
+
 @media (min-width: @desktop-width) {
   .selection {
-    .wrapper();
+    padding-top: 55px;
+  }
+
+  .selection__title {
+    width: @width-large;
   }
 }

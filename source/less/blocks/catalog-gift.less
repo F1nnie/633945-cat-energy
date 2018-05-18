@@ -1,34 +1,90 @@
 .catalog-gift {
-  margin-bottom: 30px;
-  background: url("/img/gift-photo-mobile@1x.jpg") no-repeat;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   background-color: @color-bg;
   width: 280px;
+  margin: 0 auto;
   height: 289px;
   text-align: center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
+.catalog__wrapper {
+  margin-bottom: 35px;
 }
 
 .catalog-gift__text {
+  position: relative;
   display: inline-block;
   width: 175px;
-  padding-top: 185px;
-  padding-left: 55px;
+  padding-top: 187px;
+  padding-left: 57px;
   padding-right: 55px;
-  font-family: Arial, sans-serif;
-  .font-size(16px; 20px);
+  font-family: "Arial", sans-serif;
+  .font-size(16px;
+  20px);
   color: @color-white;
-}
-@media (min-width: @tablet-width) {
-  .catalog-gift {
-    width: 100%;
-    position: relative;
-    margin-bottom: 77px;
-    .wrapper();
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 113px;
+    width: 55px;
+    height: 60px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .catalog-gift {
+    width: @width-medium;
+    position: relative;
+    margin-bottom: 77px;
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+    .wrapper();
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .catalog-gift__text {
+    padding-top: 75px;
+    margin-left: 250px;
+
+    &::before {
+      top: 67px;
+      left: -245px;
+    }
+  }
+}
+
 @media (min-width: @desktop-width) {
   .catalog-gift {
-    .wrapper;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    .wrapper();
     width: 280px;
-    margin: 0 auto;
+    margin-top: -355px;
+    margin-right: 115px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+
+  .catalog-gift__text {
+    margin: 0;
+    padding-top: 187px;
+    padding-left: 35px;
+    padding-right: 55px;
+
+    &::before {
+      top: 65px;
+      left: 90px;
+    }
   }
 }
