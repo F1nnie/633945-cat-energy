@@ -3229,6 +3229,12 @@ img {
   .form__introduction {
     padding-left: 0;
   }
+  .form-header__container {
+    width: 1220px;
+  }
+  .form__introduction {
+    padding-left: 0;
+  }
   .form-client-data__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
