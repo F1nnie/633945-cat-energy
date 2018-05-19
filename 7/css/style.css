@@ -617,8 +617,8 @@ img {
     right: -31%;
     width: 720px;
     height: 696px;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat, -webkit-gradient(linear, left top, left bottom, from(#68b738)) no-repeat;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat, linear-gradient(#68b738) no-repeat;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-color: #68b738;
     background-size: 100%;
   }
   .main .site-list__link {
@@ -1757,6 +1757,9 @@ img {
   position: relative;
   background-color: #ffffff;
 }
+.contacts-catalog .contacts__container {
+  background-color: #f2f2f2;
+}
 .contacts__title {
   margin: 0;
   padding-right: 30px;
@@ -1819,6 +1822,9 @@ img {
     width: 100%;
     position: relative;
     padding-top: 0;
+  }
+  .contacts-catalog {
+    margin-top: -50px;
   }
   .contacts__container {
     padding: 65px 40px 55px;
@@ -1885,6 +1891,9 @@ img {
     margin-top: -40px;
     background: none;
     position: relative;
+  }
+  .contacts-catalog .contacts__container {
+    background-color: #ffffff;
   }
   .contacts__wrapper {
     width: 100%;
@@ -2195,17 +2204,15 @@ img {
             justify-content: center;
   }
   .product__image {
-    margin-top: -46px;
-  }
-  .product__wrap {
-    width: 324px;
-    position: relative;
+    position: absolute;
+    top: -46px;
+    left: 0;
   }
   .product:nth-child(even) .product__image {
-    margin-top: -82px;
+    top: -82px;
   }
   .product__title {
-    padding-top: 35px;
+    padding-top: 164px;
     padding-bottom: 20px;
     margin: 0 auto;
     width: 143px;
@@ -2258,9 +2265,6 @@ img {
   }
   .product__table tr:not(:first-child) {
     padding-top: 5px;
-  }
-  .product__wrap {
-    width: 245px;
   }
 }
 .catalog-more {
@@ -2588,7 +2592,6 @@ img {
   .catalog-gift {
     width: 708px;
     position: relative;
-    margin-bottom: 77px;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
   }
   .catalog-gift__text {
@@ -3011,6 +3014,7 @@ img {
 @media (min-width: 768px) {
   .form {
     margin: 0 auto;
+    padding-bottom: 50px;
   }
   .form-header__container {
     width: 768px;
@@ -3217,7 +3221,7 @@ img {
 }
 @media (min-width: 1300px) {
   .form {
-    padding: 0 0 85px;
+    padding: 0 0 50px;
   }
   .form-header__container {
     width: 1220px;
