@@ -1,27 +1,39 @@
 .product-extra {
-  padding-bottom: 15px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid @color-border;
+}
+
+.product-extra:first-child {
+  border-top: 1px solid @color-border;
 }
 
 .product-extra__title {
-  padding: 15px 0;
+  padding-top: 12px;
   margin: 0;
   .font-size(16px; 16px);
   text-transform: uppercase;
 }
 
+.product-extra__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-extra__price,
 .product-extra__quantity {
-  padding-top: 10px;
+  padding-top: 12px;
   font-family: "Arial", sans-serif;
   .font-size(14px; 14px);
 }
 
 .product-extra__button {
   margin-top: 15px;
+  width: 93.5%;
 }
+
 @media (min-width: @tablet-width) {
   .product-extra {
-    padding: 27px 38px;
+    padding: 26px 38px 27px;
     width: 632px;
     border: 1px solid @color-border;
   }
@@ -31,11 +43,16 @@
     justify-content: space-between;
     width: 632px;
     text-align: left;
+    align-items: baseline;
   }
 
   .product-extra__title {
     padding: 0;
     flex-grow: 1;
+    .font-size(20px; 20px);
+  }
+
+  .product-extra__description {
     .font-size(20px; 20px);
   }
 
@@ -51,20 +68,39 @@
 
   .product-extra__button {
     width: 100%;
+    margin-top: 21px;
     padding: 10px 0;
+    .font-size(16px; 20px);
   }
 }
+
 @media (min-width: @desktop-width) {
   .product-extra {
-    padding: 30px 0;
+    padding: 16px 0 15px 1px;
     width: 895px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .product-extra:last-child {
+    border-bottom: 1px solid @color-border;
+  }
+
+  .product-extra:nth-child(2) .product-extra__price {
+    padding-right: 9px;
   }
 
   .product-extra__container {
-    width: 610px;
+    width: 612px;
+  }
+
+  .product-extra__wrapper {
+    width: 285px;
+    text-align: left;
   }
 
   .product-extra__title {
@@ -73,9 +109,9 @@
     padding: 0;
   }
 
-  .product-extra__quantity {}
-
-  .product-extra__price {}
+  .product-extra__quantity {
+    flex-shrink: 0;
+  }
 
   .product-extra__button {
     margin: 0;
