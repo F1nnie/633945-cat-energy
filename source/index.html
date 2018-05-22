@@ -12,7 +12,7 @@
 
 <body>
 
-  <header class="page-header">
+  <header class="page-header page-header-index">
     <div class="page-header__wrapper">
       <a class="page-header__logo page-header__logo--disabled">
         <picture>
@@ -26,7 +26,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__listmain-nav__list site-list site-list-index list">
+          <ul class="main-nav__list site-list site-list-index list">
             <li class="site-list__item  main">
               <a class="site-list__link site-list__link--active link">Главная</a>
             </li>
@@ -143,18 +143,16 @@
             </span>
           </div>
         </div>
-        <div class="example__slider">
-          <div class="slide__wrap">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="slider__slide-before slider__slide-before--active" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
-                alt="До">
-            </picture>
-          </div>
+        <div class="example__slider slider">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img class="slider__slide-before slider__slide-before--active" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+              alt="До">
+          </picture>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">

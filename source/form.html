@@ -58,14 +58,13 @@
                   <label for="client-name">Имя:
                     <sup>*</sup>
                   </label>
-                  <input class="form-client-data__field form-client-data-name__field" id="client-name" type="text" name="name" placeholder="Барсик"
-                    required>
+                  <input class="form-client-data__field form-client-data-name__field" id="client-name" type="text" name="name" placeholder="Барсик">
                 </div>
                 <div class="form-client-data__container">
                   <label for="client-weight">Вес (Кг):
                     <sup>*</sup>
                   </label>
-                  <input class="form-client-data__field" id="client-weight" type="number" name="weight" placeholder="7" required>
+                  <input class="form-client-data__field" id="client-weight" type="number" name="weight" placeholder="7">
                 </div>
                 <div class="form-client-data__container">
                   <label for="client-age">Возраст (Лет):</label>
@@ -95,16 +94,24 @@
                 <div class="form-client-contacts__wrap">
                   <div class="form-client-contacts__container">
                     <label for="client-email">E-mail:
-                      <sup class="email-sup">*</sup>
+                      <sup>*</sup>
                     </label>
                     <input class="form-client-contacts__field form-client-contacts-email__field" type="email" name="email" id="client-email"
-                      placeholder="kuklachev@gmail.com" required>
+                      placeholder="kuklachev@gmail.com">
+                    <svg class="form-client-contacts__svg form-client-contacts__email" width="17" height="13" fill="#222222">
+                      <use xlink:href="img/sprite.svg#sprite-icon-mail">
+                      </use>
+                    </svg>
                   </div>
                   <div class="form-client-contacts__container">
                     <label for="client-tel">Телефон:
-                      <sup class="tel-sup">*</sup>
+                      <sup>*</sup>
                     </label>
-                    <input class="form-client-contacts__field" type="tel" name="tel" id="client-tel" placeholder="8 (960) 900-60-90" required>
+                    <input class="form-client-contacts__field" type="tel" name="tel" id="client-tel" placeholder="8 (960) 900-60-90">
+                    <svg class="form-client-contacts__svg form-client-contacts__tel" width="20" height="20" fill="#222222">
+                      <use xlink:href="img/sprite.svg#sprite-icon-phone">
+                      </use>
+                    </svg>
                   </div>
                 </div>
               </fieldset>
@@ -206,9 +213,11 @@
       </div>
     </div>
   </footer>
-  <script src="js/picturefill.js"></script>
+
   <script src="js/mobile-menu.js"></script>
+  <script src="js/picturefill.js"></script>
   <script src="js/svgxuse.js"></script>
+  <script src="js/form-validation.js"></script>
 
 </body>
 

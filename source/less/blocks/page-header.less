@@ -44,10 +44,27 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header {
+  .page-header,
+  .page-header-index {
     width: 100%;
     position: relative;
     .wrapper();
+  }
+
+  .page-header-index::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 696px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-color: @color-bg;
+    background-size: 100%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .page-header__logo {

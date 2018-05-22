@@ -16,6 +16,33 @@
   text-transform: uppercase;
 }
 
+.form-client-data__field:hover,
+.form-client-contacts__field:hover,
+.form-comment__text:hover {
+  border: 1px solid @color-bg3;
+}
+
+
+.form-client-data__field:focus,
+.form-client-contacts__field:focus,
+.form-comment__text:focus {
+  border: 1px solid @color-text-68;
+}
+
+
+.form-client-contacts__field:focus + .form-client-contacts__svg use {
+  fill: #68b738;
+}
+
+.form-client-data input:invalid,
+.form-client-contacts__field:invalid {
+  border: 1px solid #ff8282;
+}
+
+.form-client-contacts__field:invalid + .form-client-contacts__svg use {
+  fill: #ff8282;
+}
+
 .form sup {
   font-size: 1em;
   top: -1px;
@@ -139,9 +166,10 @@
 }
 
 .form-client-contacts__container {
+  position: relative;
   width: 280px;
   margin: 0 auto;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -152,6 +180,7 @@
   text-transform: uppercase;
   width: 100%;
   position: relative;
+  border: 1px solid @color-border;
 }
 
 .form-client-contacts-email__field {
@@ -159,39 +188,23 @@
   padding-top: 9px;
 }
 
-.form-client-contacts__field label {
-  position: relative;
-}
-
-.email-sup::before {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 15px;
-  top: 5px;
-  left: 203px;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 1;
-}
-
-.tel-sup::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  top: 3px;
-  left: 188px;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 1;
-}
-
 .form-client-contacts label {
   padding-right: 8px;
   flex-shrink: 0;
+}
+
+.form-client-contacts__svg {
+  position: absolute;
+}
+
+.form-client-contacts__email {
+  top: 13px;
+  right: 15px;
+}
+
+.form-client-contacts__tel {
+  top: 12px;
+  right: 12px;
 }
 
 .form-comment {
@@ -411,7 +424,7 @@
 
   .form-client-contacts {
     padding-top: 75px;
-    padding-bottom: 48px;
+    padding-bottom: 44px;
 
     &::before {
       width: 100vw;
@@ -443,21 +456,23 @@
   .form-client-contacts__field {
     padding-left: 14px;
     padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .form-client-contacts-email__field {
     padding-left: 20px;
     padding-top: 14px;
+    padding-bottom: 14px;
   }
 
-  .email-sup::before {
-    left: 541px;
-    top: 9px;
+  .form-client-contacts__email {
+    top: 21px;
+    right: 17px;
   }
 
-  .tel-sup::before {
-    left: 520px;
-    top: 6.5px;
+  .form-client-contacts__tel {
+    top: 18px;
+    right: 14px;
   }
 
   .form-comment {
@@ -629,13 +644,12 @@
     width: 486px;
   }
 
-  .email-sup::before {
-    left: 478px;
-    bottom: 8px;
+  .form-client-contacts__email {
+    right: 22px;
   }
 
-  .tel-sup::before {
-    left: 459px;
+  .form-client-contacts__tel {
+    right: 17px;
   }
 
   .form-comment {
