@@ -3,12 +3,13 @@
 }
 
 .promo__wrapper {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 320px;
   margin: auto;
   color: @color-white;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat, linear-gradient(@color-bg) no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat, linear-gradient(#65a93c) no-repeat;
   background-size: 320px 305px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -94,7 +95,6 @@
     padding-bottom: 15px;
     .wrapper();
   }
-
 
   .promo__title {
     padding-top: 105px;
