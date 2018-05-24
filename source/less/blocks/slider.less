@@ -147,6 +147,14 @@
     .font-size(20px;
     20px);
   }
+
+  .slider__toggle:hover {
+    border-bottom: 1px solid rgb(190, 190, 190);
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -157,15 +165,15 @@
   }
 
   .slider__slide-before {
-    bottom: 173px;
-    left: 650px;
+    bottom: 170px;
+    left: 630px;
     height: 518px;
     clip: rect(auto, 365px, auto, auto);
   }
 
   .slider__slide-after {
-    right: 0;
-    bottom: 173px;
+    right: -20px;
+    bottom: 170px;
     clip: rect(auto, auto, auto, 365px);
   }
 
@@ -174,7 +182,7 @@
   }
 
   .slider__navigation {
-    margin-top: 202px;
+    margin-top: 218px;
     margin-left: 78px;
     padding-top: 16px;
     padding-bottom: 0;

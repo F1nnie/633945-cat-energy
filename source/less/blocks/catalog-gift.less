@@ -1,6 +1,6 @@
 .catalog-gift {
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
-  background-color: @color-bg;
+  background-color: #71b548;
   background-size: 280px 289px;
   width: 280px;
   margin: 0 auto;
@@ -42,9 +42,12 @@
 
 @media (min-width: @tablet-width) {
   .catalog-gift {
+    margin-bottom: 125px;
     width: @width-medium;
+    max-height: 200px;
     position: relative;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+    background-color: #71b548;
     .wrapper();
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -66,10 +69,9 @@
 @media (min-width: @desktop-width) {
   .catalog-gift {
     background-image: url("../img/gift-photo-desktop@1x.jpg");
-    .wrapper();
-    width: 280px;
-    margin-top: -355px;
-    margin-right: 115px;
+    width: 245px;
+    max-height: none;
+    margin-bottom: 22px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
@@ -79,12 +81,12 @@
   .catalog-gift__text {
     margin: 0;
     padding-top: 187px;
-    padding-left: 35px;
+    padding-left: 41px;
     padding-right: 55px;
 
     &::before {
       top: 65px;
-      left: 90px;
+      left: 96px;
     }
   }
 }
