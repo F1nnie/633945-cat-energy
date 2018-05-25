@@ -57,7 +57,8 @@
 }
 
 .form-extra__checkbox {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
 
 .form-extra__checkbox + label::before {
@@ -68,6 +69,10 @@
   top: 0;
   left: 0;
   border: 1px solid rgb(207, 207, 207);
+}
+
+.form-extra__checkbox:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .form-extra__checkbox:checked + label::after {
@@ -84,7 +89,7 @@
 @media (min-width: @tablet-width) {
   .form-extra::before {
     width: 100vw;
-    top: 25px;
+    top: 22px;
   }
 
   .form-extra__title {
@@ -120,11 +125,12 @@
   .form-extra__checkbox + label::before {
     width: 38px;
     height: 38px;
-    top: -7px;
+    top: -10px;
   }
 
   .form-extra__checkbox:checked + label::after {
     left: 11px;
+    top: 2px;
   }
 }
 
@@ -132,6 +138,10 @@
   .form-extra__wrapper {
     width: @desktop-width;
     padding-bottom: 20px;
+  }
+
+  .form-extra__title {
+    padding-bottom: 65px;
   }
 
   .form-extra__container {

@@ -1,0 +1,54 @@
+.academy {
+  padding-top: 21px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.academy__link {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-family: "Arial", sans-serif;
+  .font-size(16px;
+  20px);
+  color: rgba(68, 68, 68, 1);
+}
+
+.academy__link svg {
+  padding-right: 13px;
+}
+
+.academy__link:hover svg {
+  fill: @color-bg;
+}
+
+.academy__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .academy {
+    padding: 0;
+    padding-top: 2px;
+  }
+
+  .academy__link {
+    padding-top: 5px;
+    padding-right: 2px;
+    width: 162px;
+  }
+
+  .academy__link svg {
+    margin-right: -8px;
+    padding: 0;
+    padding-top: 2px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+    .academy__link {
+    padding-top: 4px;
+  }
+}

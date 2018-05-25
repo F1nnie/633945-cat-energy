@@ -1,6 +1,6 @@
 .categories {
-  padding-top: 22px;
-  padding-bottom: 15px;
+  padding-top: 24px;
+  padding-bottom: 17px;
 }
 
 .categories__wrapper {
@@ -18,7 +18,7 @@
 }
 
 .categories__title {
-  padding-top: 40px;
+  padding-top: 37px;
   padding-left: 10px;
   text-align: center;
   margin: 0;
@@ -30,7 +30,8 @@
 
 .categories__item--pro .categories__title {
   padding-left: 38px;
-  padding-top: 35px;
+  padding-top: 37px;
+  padding-bottom: 2px;
 }
 
 .categories__text {
@@ -44,7 +45,7 @@
 .categories__link {
   display: inline-block;
   position: relative;
-  padding-top: 22px;
+  padding-top: 20px;
   padding-bottom: 22px;
   padding-right: 35px;
   .font-size(16px;
@@ -62,7 +63,7 @@
   position: absolute;
   width: 24px;
   height: 11px;
-  top: 25px;
+  top: 24px;
   right: 0;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
@@ -83,16 +84,16 @@
   .categories__item::before {
     content: "";
     position: absolute;
-    width: 51px;
-    height: 51px;
+    width: 50px;
+    height: 50px;
     left: 22px;
-    top: 27px;
+    top: 24px;
     background-color: @color-bg;
     border-radius: 50%;
   }
 
   .categories__item--pro::before {
-    top: 22px;
+    top: 25px;
   }
 
   .categories__item--slim::after {
@@ -101,7 +102,7 @@
     width: 37px;
     height: 52px;
     left: 29px;
-    top: 23px;
+    top: 20px;
     background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -115,7 +116,7 @@
     width: 67px;
     height: 28px;
     left: 13px;
-    top: 33px;
+    top: 36px;
     background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -233,7 +234,8 @@
 
 @media (min-width: @desktop-width) {
   .categories {
-    padding-bottom: 73px;
+    margin-top: -54px;
+    padding-bottom: 76px;
     .wrapper();
   }
 
@@ -244,17 +246,18 @@
 
   .categories__title {
     text-align: center;
-    padding-bottom: 65px;
+    padding-bottom: 63px;
     padding-left: 25px;
   }
 
   .categories__text {
     padding-top: 8px;
-    padding-bottom: 9px;
+    padding-bottom: 10px;
   }
 
   .categories__item--pro .categories__title {
     padding-top: 75px;
+    padding-bottom: 65px;
     padding-left: 62px;
   }
 

@@ -4,7 +4,6 @@
   background-size: 280px 289px;
   width: 280px;
   margin: 0 auto;
-  height: 289px;
   text-align: center;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -21,6 +20,7 @@
   display: inline-block;
   width: 175px;
   padding-top: 187px;
+  padding-bottom: 41px;
   padding-left: 57px;
   padding-right: 55px;
   font-family: "Arial", sans-serif;
@@ -44,7 +44,6 @@
   .catalog-gift {
     margin-bottom: 125px;
     width: @width-medium;
-    max-height: 200px;
     position: relative;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
     background-color: #71b548;
@@ -56,12 +55,14 @@
   }
 
   .catalog-gift__text {
-    padding-top: 75px;
-    margin-left: 250px;
+    padding-top: 72px;
+    padding-bottom: 68px;
+    margin-left: 313px;
+    text-align: left;
 
     &::before {
-      top: 67px;
-      left: -245px;
+      top: 65px;
+      left: -275px;
     }
   }
 }
@@ -81,8 +82,10 @@
   .catalog-gift__text {
     margin: 0;
     padding-top: 187px;
+    padding-bottom: 41px;
     padding-left: 41px;
     padding-right: 55px;
+    text-align: center;
 
     &::before {
       top: 65px;
