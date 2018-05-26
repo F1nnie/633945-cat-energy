@@ -1,4 +1,5 @@
 .promo {
+  padding-top: 2px;
   text-align: center;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .promo__text {
-  padding-bottom: 29px;
+  padding-bottom: 28px;
   font-family: @font-regular;
   .font-size(14px; 14px);
   text-transform: uppercase;
@@ -47,6 +48,7 @@
   .promo__wrapper {
     justify-content: flex-start;
     background-image: none;
+    flex-wrap: wrap;
   }
 
   .promo__title {
@@ -106,15 +108,15 @@
   }
 
   .promo__button {
-    top: 339px;
-    margin-left: 81px;
-    width: 245px;
+    position: relative;
+    top: -310px;
+    margin-left: 80px;
   }
 
   .promo__image {
-    position: relative;
-    right: -450px;
-    top: -280px;
+    position: absolute;
+    top: 55px;
+    right: 367px;
     width: 552px;
     height: 499px;
   }

@@ -9,26 +9,27 @@
 }
 
 .form input {
-  border: none;
-  outline: 1px solid @color-border;
+  border: 1px solid @color-border;
   box-sizing: border-box;
+  height: 45px;
 }
 
 .form-client-data__field:hover,
 .form-client-contacts__field:hover,
 .form-comment__text:hover {
-  outline: 1px solid @color-bg3;
+  border: 1px solid @color-bg3;
 }
 
 .form-client-data__field:focus,
 .form-client-contacts__field:focus,
 .form-comment__text:focus {
-  outline: 2px solid @color-text-68;
+  outline: 3px solid @color-text-68;
 }
 
 .form-client-data__field:invalid,
 .form-client-contacts__field:invalid {
-  outline: 2px solid #ff8282;
+  border: 2px solid #ff8282;
+  outline: none;
 }
 
 .form-client-contacts__field:focus + .form-client-contacts__svg use {
@@ -54,6 +55,10 @@
   .form fieldset {
     .font-size(20px;
     20px);
+  }
+
+  .form input {
+    height: 52px;
   }
 }
 
