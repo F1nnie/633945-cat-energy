@@ -669,6 +669,7 @@ img {
 }
 .promo__title {
   padding: 27px 40px;
+  padding-bottom: 25px;
   margin: 0;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-weight: normal;
@@ -819,8 +820,7 @@ img {
 }
 .categories__item--pro .categories__title {
   padding-left: 38px;
-  padding-top: 37px;
-  padding-bottom: 2px;
+  padding-top: 36px;
 }
 .categories__text {
   margin: 0;
@@ -848,16 +848,22 @@ img {
   position: absolute;
   width: 24px;
   height: 11px;
-  top: 24px;
+  top: 22px;
   right: 0;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
+}
+.categories__item--slim .categories__link::before {
+  right: 3px;
 }
 .categories__link:hover::before {
   background-image: url("../img/icon-right-arrow-verylong.svg");
   background-repeat: no-repeat;
   width: 34px;
   right: -10px;
+}
+.categories__item--slim .categories__link:hover::before {
+  right: -7px;
 }
 .categories__item--slim {
   margin-bottom: 20px;
@@ -1084,7 +1090,7 @@ img {
 .advantages__title {
   margin: 0;
   padding-left: 0;
-  padding-bottom: 31px;
+  padding-bottom: 29px;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
@@ -1094,7 +1100,7 @@ img {
 }
 .advantages__text {
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 26px;
   padding-left: 80px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -1103,7 +1109,7 @@ img {
 .advantages__item--nutritionally::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 3px;
   left: 5px;
   width: 50px;
   height: 50px;
@@ -1120,7 +1126,7 @@ img {
 .advantages__item--practical::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 2px;
   left: 5px;
   width: 50px;
   height: 50px;
@@ -1137,8 +1143,8 @@ img {
 .advantages__item--functionally::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 3px;
+  left: 4px;
   width: 50px;
   height: 50px;
   background-image: url("../img/advantage-dining@1x.png");
@@ -1154,7 +1160,7 @@ img {
 .advantages__item--advancement::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 3px;
   left: 5px;
   width: 50px;
   height: 50px;
@@ -1172,7 +1178,7 @@ img {
   .advantages__item::before {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -2px;
     left: 0;
     width: 60px;
     height: 60px;
@@ -1185,7 +1191,7 @@ img {
     position: relative;
   }
   .advantages__wrapper {
-    padding-bottom: 0;
+    padding-bottom: 2px;
   }
   .advantages__title {
     padding-bottom: 62px;
@@ -1210,7 +1216,7 @@ img {
   .advantages__item {
     width: 202px;
     padding-right: 123px;
-    padding-bottom: 95px;
+    padding-bottom: 97px;
   }
   .advantages__item:nth-child(3) {
     padding-bottom: 75px;
@@ -1346,7 +1352,7 @@ img {
 }
 .example__title {
   padding-top: 16px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   margin: 0;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 36px;
@@ -1354,7 +1360,7 @@ img {
 }
 .example__text {
   width: 270px;
-  padding-bottom: 38px;
+  padding-bottom: 37px;
   margin: 0;
   font-family: "Arial", sans-serif;
   text-align: left;
@@ -1366,12 +1372,12 @@ img {
 .example__legend {
   display: inline-block;
   padding-left: 47px;
-  padding-top: 5px;
-  padding-bottom: 30px;
+  padding-top: 4px;
+  padding-bottom: 32px;
   font-size: 14px;
   line-height: 24px;
-  font-weight: bold;
   text-transform: uppercase;
+  font-weight: normal;
 }
 .example__value {
   display: inline;
@@ -1405,7 +1411,7 @@ img {
   padding-left: 41px;
 }
 .example__value:nth-child(2) {
-  padding-right: 23px;
+  padding-right: 20px;
 }
 .example__table tr {
   display: -webkit-box;
@@ -1419,7 +1425,7 @@ img {
 }
 .example__field {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 6px;
   padding-bottom: 11px;
   width: 86px;
   position: relative;
@@ -1607,7 +1613,7 @@ img {
     background-color: #f2f2f2;
   }
   .example__legend {
-    padding-top: 40px;
+    padding-top: 38px;
     width: 327px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1636,8 +1642,8 @@ img {
 .slider__navigation {
   position: relative;
   padding-left: 37px;
-  padding-top: 32px;
-  padding-bottom: 34px;
+  padding-top: 28px;
+  padding-bottom: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1813,6 +1819,7 @@ img {
 }
 .contacts__container {
   padding: 28px 20px;
+  padding-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1829,19 +1836,21 @@ img {
   background-color: #f2f2f2;
 }
 .contacts__title {
+  width: 230px;
   margin: 0;
   padding-right: 25px;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  font-weight: normal;
 }
 .contacts__adress {
   padding: 0;
   margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   position: relative;
 }
 .contacts__adress br {
@@ -1906,7 +1915,7 @@ img {
     line-height: 25px;
   }
   .contacts__adress {
-    margin-top: 0;
+    margin-top: -3px;
     width: 190px;
     font-size: 16px;
     line-height: 20px;
@@ -2048,7 +2057,7 @@ img {
     position: relative;
   }
   .page-footer__wrapper {
-    padding: 45px 0;
+    padding: 48px 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2497,15 +2506,7 @@ img {
   border-top: 1px solid #e6e6e6;
 }
 .product-extra__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  max-width: 150px;
   padding-top: 12px;
   margin: 0;
   font-size: 16px;
@@ -2557,8 +2558,8 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     width: 632px;
     text-align: left;
     -webkit-box-align: baseline;
@@ -2588,7 +2589,7 @@ img {
   }
   .product-extra__button {
     width: 100%;
-    margin-top: 21px;
+    margin-top: 22px;
     padding: 10px 0;
     font-size: 16px;
     line-height: 20px;
@@ -2691,7 +2692,7 @@ img {
 }
 @media (min-width: 768px) {
   .catalog-gift {
-    margin-bottom: 125px;
+    margin-bottom: 126px;
     width: 708px;
     position: relative;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
