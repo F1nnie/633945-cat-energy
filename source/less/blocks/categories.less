@@ -30,8 +30,7 @@
 
 .categories__item--pro .categories__title {
   padding-left: 38px;
-  padding-top: 37px;
-  padding-bottom: 2px;
+  padding-top: 36px;
 }
 
 .categories__text {
@@ -63,10 +62,14 @@
   position: absolute;
   width: 24px;
   height: 11px;
-  top: 24px;
+  top: 22px;
   right: 0;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
+}
+
+.categories__item--slim .categories__link::before {
+  right: 3px;
 }
 
 .categories__link:hover::before {
@@ -74,6 +77,10 @@
   background-repeat: no-repeat;
   width: 34px;
   right: -10px;
+}
+
+.categories__item--slim .categories__link:hover::before {
+  right: -7px;
 }
 
 .categories__item--slim {
