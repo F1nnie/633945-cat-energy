@@ -768,7 +768,7 @@ img {
   .promo__image {
     position: absolute;
     top: 55px;
-    right: 260px;
+    right: 250px;
     width: 552px;
     height: 499px;
   }
@@ -1622,7 +1622,7 @@ img {
     background-color: #f2f2f2;
   }
   .example__table tr:first-child {
-    width: 345px;
+    width: 350px;
   }
   .example__legend {
     padding-top: 38px;
@@ -1982,17 +1982,13 @@ img {
     background: none;
     position: relative;
   }
-  .contacts-catalog .contacts__container {
-    top: 93px;
-    background-color: #ffffff;
-  }
   .contacts__wrapper {
     width: 100%;
     padding: 0;
   }
   .contacts__container {
     top: 98px;
-    left: 40px;
+    left: 35px;
     padding-top: 65px;
     padding-left: 65px;
     padding-right: 84px;
@@ -2001,6 +1997,11 @@ img {
     position: absolute;
     background-color: #ffffff;
     z-index: 2;
+  }
+  .contacts-catalog .contacts__container {
+    top: 93px;
+    left: 30px;
+    background-color: #ffffff;
   }
   .contacts__title {
     padding-left: 10px;
