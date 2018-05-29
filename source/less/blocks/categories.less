@@ -31,12 +31,11 @@
 .categories__item--pro .categories__title {
   padding-left: 38px;
   padding-top: 37px;
-  padding-bottom: 2px;
 }
 
 .categories__text {
   margin: 0;
-  padding-top: 35px;
+  padding-top: 36px;
   padding-bottom: 22px;
   font-family: "Arial", sans-serif;
   text-align: left;
@@ -63,10 +62,14 @@
   position: absolute;
   width: 24px;
   height: 11px;
-  top: 24px;
+  top: 22px;
   right: 0;
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
+}
+
+.categories__item--slim .categories__link::before {
+  right: 3px;
 }
 
 .categories__link:hover::before {
@@ -74,6 +77,10 @@
   background-repeat: no-repeat;
   width: 34px;
   right: -10px;
+}
+
+.categories__item--slim .categories__link:hover::before {
+  right: -7px;
 }
 
 .categories__item--slim {
@@ -140,7 +147,7 @@
   }
 
   .categories__item--slim {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .categories__title {
@@ -245,19 +252,18 @@
   }
 
   .categories__title {
+    padding-top: 78px;
     text-align: center;
-    padding-bottom: 63px;
+    padding-bottom: 65px;
     padding-left: 25px;
   }
 
   .categories__text {
     padding-top: 8px;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
   .categories__item--pro .categories__title {
-    padding-top: 75px;
-    padding-bottom: 65px;
     padding-left: 62px;
   }
 
@@ -278,6 +284,15 @@
     height: 102px;
     left: 50px;
     top: 45px;
+  }
+
+  .categories__item--slim .categories__link::before {
+    right: 10px;
+    top: 24px;
+  }
+
+  .categories__item--slim .categories__link:hover::before {
+    right: 0;
   }
 
   .categories__item--slim::after {
